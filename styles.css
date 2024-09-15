@@ -1,39 +1,187 @@
+/* Tipografías Importadas */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/* Variables de Colores */
+:root {
+    --primary-color: #1e1e1e;
+    --secondary-color: #ff4655;
+    --text-color: #f5f5f5;
+    --background-color: #121212;
+    --accent-color: #00eaff;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #20232a;
-    color: #61dafb;
-    padding: 20px;
+    background-image: url('images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+    padding: 100px 20px;
     text-align: center;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.7);
+}
+
+header h1 {
+    font-size: 60px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+header p {
+    font-size: 24px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 nav a {
-    color: #61dafb;
+    color: var(--text-color);
     margin: 0 15px;
     text-decoration: none;
+    font-weight: 700;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 section {
-    padding: 40px 20px;
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 section h2 {
-    border-bottom: 2px solid #61dafb;
-    padding-bottom: 10px;
+    color: var(--secondary-color);
+    font-size: 36px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: var(--accent-color);
+    margin-top: 10px;
+}
+
+#sobre-mi p {
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .proyecto {
-    margin-bottom: 20px;
+    background: var(--primary-color);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.proyecto:hover {
+    transform: translateY(-10px);
+}
+
+.proyecto h3 {
+    color: var(--accent-color);
+    margin-top: 0;
+}
+
+.proyecto p {
+    font-size: 16px;
+}
+
+.proyecto a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.proyecto a:hover {
+    text-decoration: underline;
+}
+
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+#habilidades li {
+    background: var(--primary-color);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#contacto p {
+    font-size: 18px;
+}
+
+#contacto a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+#contacto a:hover {
+    text-decoration: underline;
 }
 
 footer {
-    background-color: #20232a;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 40px;
+    }
+    
+    header p {
+        font-size: 18px;
+    }
+    
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
 
