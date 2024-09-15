@@ -63,7 +63,7 @@ nav {
     z-index: 1;                  /* Asegura que los enlaces estén por encima del fondo */
     display: flex;               /* Añadido: Usa flexbox para alinear los enlaces */
     flex-direction: column;      /* Añadido: Coloca los enlaces uno debajo del otro */
-    gap: 10px;                   /* Añadido: Espacio entre los enlaces */
+    gap: 5px;                   /* Añadido: Espacio entre los enlaces */
 }
 
 nav a {
@@ -71,7 +71,7 @@ nav a {
     text-decoration: none;
     font-weight: 700;
     position: relative;
-    padding: 5px 0;              /* Añadido: Espacio alrededor del texto del enlace */
+    padding: 2px 0;              /* Añadido: Espacio alrededor del texto del enlace */
 }
 
 nav a::after {
