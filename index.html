@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Iván Ramiro Pinzón | Data Science Student</title>
@@ -7,7 +7,9 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
+    <!-- Contenedor de partículas -->
     <div id="particles-js"></div>
+    
     <header>
         <h1>Iván Ramiro Pinzón</h1>
         <p>Data Science Student</p>
@@ -21,7 +23,7 @@
 
     <section id="sobre-mi">
         <h2>Hey there!</h2>
-        <p>I'm that Data Science student who's out here juggling algorithms and code like a pro. My playground?Python and Java. My mission? Turning mountains of data into pure gold (or at least some pretty useful info 😉).</p>
+        <p>I'm that Data Science student who's out here juggling algorithms and code like a pro. My playground? Python and Java. My mission? Turning mountains of data into pure gold (or at least some pretty useful info 😉).</p>
         <p>When I'm not decoding the data universe, I'm daydreaming about creating apps as addictive as your favorite game's latest patch. My secret goal? To use my data superpowers to shake up the tech world and, while I'm at it, impress a few million users.</p>
         <p>Always ready to level up, learn new tricks from the pros, and push my skills to the max. Oh, and when the code gives me a break, you'll find me in the Summoner's Rift. Main adc? Guilty as charged!</p>
     </section>
@@ -29,26 +31,36 @@
     <section id="proyectos">
         <h2>Projects</h2>
         <div class="proyecto">
-            <h3>Proyecto 1</h3>
-            <p>Descripción breve del proyecto. <a href="https://github.com/tuusuario/proyecto1">Ver en GitHub</a></p>
+            <h3>Data Visualization Dashboard</h3>
+            <p>Developed an interactive dashboard for visualizing real-time data analytics using Python and Plotly. This project showcases my skills in data manipulation and visualization techniques. <a href="https://github.com/legoar97/data-visualization-dashboard">View on GitHub</a></p>
         </div>
         <div class="proyecto">
-            <h3>Proyecto 2</h3>
-            <p>Descripción breve del proyecto. <a href="https://github.com/tuusuario/proyecto2">Ver en GitHub</a></p>
+            <h3>Java Desktop Application for Inventory Management</h3>
+            <p>Designed and implemented a Java desktop application to manage inventory for small businesses. The project includes a user-friendly interface, database integration with SQLite, and functionalities such as product tracking, reporting, and inventory alerts. <a href="https://github.com/legoar97/java-inventory-management">View on GitHub</a></p>
         </div>
-        <!-- Agrega más proyectos según sea necesario -->
+        <div class="proyecto">
+            <h3>Web Application for Game Stats Tracking</h3>
+            <p>Built a web application using JavaScript, Node.js, and MongoDB to track and display player statistics for popular games. This project highlights my full-stack development skills and understanding of APIs. <a href="https://github.com/legoar97/game-stats-tracking">View on GitHub</a></p>
+        </div>
+        <div class="proyecto">
+            <h3>Spaceman Adventure Game</h3>
+            <p>Developed a 2D platformer game inspired by classic arcade titles using C# and Unity. The game features multiple levels, obstacles, and collectibles, showcasing skills in game mechanics, physics programming, and level design. <a href="https://github.com/legoar97/spaceman-adventure-game">View on GitHub</a></p>
+        </div>
     </section>
+    
 
     <section id="habilidades">
         <h2>Skills</h2>
         <ul>
-            <li>Programming Languages: Python, Java, C++, C#</li>
-            <li>Knowledge of data structures and algorithms</li>
-            <li>OOP and SDLC experience</li>
-            <li>Management of tools such as Git and GitHub</li>
-            <!-- Agrega más habilidades relevantes -->
+            <li>Programming Languages: Python, Java, C++, C#.</li>
+            <li>Data Science Tools: pandas, NumPy, Matplotlib, Plotly.</li>
+            <li>Machine Learning: Experience with Scikit-learn for data preprocessing and model development.</li>
+            <li>Version Control: Proficient with Git and GitHub for code management and collaboration.</li>
+            <li>Software Development: Strong understanding of OOP, SDLC, and agile methodologies.</li>
+            <li>Data Structures and Algorithms: Practical knowledge applied in problem-solving and software projects.</li>
         </ul>
     </section>
+    
 
     <section id="contacto">
         <h2>Contact</h2>
@@ -60,115 +72,114 @@
     <footer>
         <p>© 2024 Iván Pinzón</p>
     </footer>
+
+    <!-- Configuración de Particles.js -->
     <script>
-particlesJS('particles-js',
-  {
-    "particles": {
-      "number": {
-        "value": 80,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        }
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 3,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 4.5,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "repulse"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "push"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 400,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200,
-          "duration": 0.4
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
-    },
-    "retina_detect": true
-  }
-);
-</script>
+        particlesJS('particles-js', {
+          "particles": {
+            "number": {
+              "value": 100,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": ["#ff6ec4", "#7873f5", "#00eaff", "#ff4655"]
+            },
+            "shape": {
+              "type": ["circle", "edge", "polygon", "star"],
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              },
+              "polygon": {
+                "nb_sides": 6
+              }
+            },
+            "opacity": {
+              "value": 0.6,
+              "random": true,
+              "anim": {
+                "enable": true,
+                "speed": 0.8,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 5,
+              "random": true,
+              "anim": {
+                "enable": true,
+                "speed": 12,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 3,
+              "direction": "none",
+              "random": true,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "grab"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 200,
+                "line_linked": {
+                  "opacity": 0.7
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+              },
+              "repulse": {
+                "distance": 200,
+                "duration": 0.4
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          },
+          "retina_detect": true
+        });
+    </script>
 </body>
 </html>
-
